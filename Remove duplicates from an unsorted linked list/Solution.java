@@ -4,7 +4,7 @@ class Solution {
         if(head==null|| head.next==null)return head;
         Node curr=head;
         Node prev=null;
-        while(curr!=null && curr.next!=null){
+        while(curr!=null ){
             if(set.contains(curr.data)){
                 prev.next=curr.next;
             }
