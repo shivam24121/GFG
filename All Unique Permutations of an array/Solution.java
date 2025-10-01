@@ -2,6 +2,7 @@ class Solution {
     public static ArrayList<ArrayList<Integer>> uniquePerms(int[] arr) {
         
         ArrayList<ArrayList<Integer>>res=new ArrayList<>();
+        Arrays.sort(arr);
         boolean[] seen=new boolean[arr.length];
         solve(arr,res,new ArrayList<>(),seen);
         return res;
